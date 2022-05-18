@@ -1,0 +1,118 @@
+/* .search-box{
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    top: 50%;
+    left: 50;
+    transform: translate(-50%,-50%);
+    background: #2C3441;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover > input {
+    width: 200px;
+    padding: 0 10px;
+}
+
+.search-box:hover > .icon{
+    background: #536179;
+}
+.icon:hover{
+    transform: rotate(360deg)scale(0.8);
+}
+input{
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: none;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+    line-height: 30px;
+    color: #fff;
+}
+
+.icon{
+    color: #21DFCD;
+    float: right;
+    width: 40px;
+    font-size: 1.3rem;
+    height: 25px;
+    border-radius: 70%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+
+#title{
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.call-to-action{
+    text-align: center;
+    justify-content: center;
+    color:#fff;
+    padding-top: 15%;
+
+}
+
+.icons{
+    color:darkcyan;
+    margin-bottom: 1rem;
+    padding: 2%;
+}
+.icons:hover {
+    color: #ff4c68;
+  }
+
+#features{
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    padding: 7% 15%;
+    text-decoration: none;
+}
+
+.feature-box{
+    padding: 5%;
+} 
+
+#SLIDE_BG {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 20s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(images/background.jpg)
+
+}@keyframes slideBg {
+    0% {
+    background-image: url(images/bg3.jpg);
+    }
+    25% {
+        background-image: url(images/bg2.jpg);
+        }
+        50% {
+            background-image: url(images/bg3.jpg);
+            }
+            75% {
+                background-image: url(images/bg2.jpg);
+                }
+                100% {
+                    background-image: url(images/bg3.jpg);
+                    }
+
+}
