@@ -51,10 +51,10 @@ input{
 } */
 
 #second{
-    background-color: #063970;
+    background-color: #00506b;
 }
 #title{
-    background-color:#063970;
+    background-color:#00506b;
     color: #fff;
     text-align: center;
 }
@@ -201,21 +201,16 @@ input{
 
 
 /* TESTIMONIAL */
+
 .heading{
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 70px;
     position: relative;
+    margin: 3% 0;
     color: #454343;
     text-transform: uppercase;
     z-index: 999;
-}
-
-.testimonial-img{
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
 }
 
 .explore-button{
@@ -237,10 +232,9 @@ input{
 }
 
 .motivational-text{
-    margin-top: 5%;
+    margin: 10%;
     padding: 2%;
-    background-color: #063970;
-    color:#ffffff;
+    color:#000000;
 }
 
 .booking-button{
@@ -267,10 +261,13 @@ form{
     border: 1px solid #ccc;
 }
 
-.last-section{
-    margin: 5% 0 0 10%;
+#footer{
+    background-color: #00506b;
+    color: white;
+    text-align: center;
+    padding: 3% 0;
     display: flex;
-    align-content:center;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-evenly;
+    
 }
