@@ -54,7 +54,7 @@ input{
     background-color: #00506b;
 }
 #title{
-    background-color:#00506b;
+    /* background-color:#00506b; */
     color: #fff;
     text-align: center;
 }
@@ -96,16 +96,16 @@ input{
     width: 100%;
     height: 100vh;
     background-position: center center;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    animation: slideBg 20s linear infinite 0s;
-    animation-timing-function: ease-in-out;
+    animation: slideBg 30s linear infinite 0s;
+    animation-timing-function:ease-in-out;
     background-image: url(images/background.jpg)
 
 }@keyframes slideBg {
     0% {
-    background-image: url(images/bg3.jpg);
+    background-image: url(images/1.jpg);
     }
     25% {
         background-image: url(images/bg2.jpg);
