@@ -1,69 +1,24 @@
-/* .search-box{
-    position: absolute;
-    display: flex;
-    justify-content: right;
-    top: 50%;
-    left: 50;
-    transform: translate(-50%,-50%);
-    background: #2C3441;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-}
-
-.search-box:hover > input {
-    width: 200px;
-    padding: 0 10px;
-}
-
-.search-box:hover > .icon{
-    background: #536179;
-}
-.icon:hover{
-    transform: rotate(360deg)scale(0.8);
-}
-input{
-    width: 0;
-    border: none;
-    outline: none;
-    padding: 0;
-    background: none;
-    font-size: 1.1rem;
-    transition: 0.5s ease;
-    line-height: 30px;
-    color: #fff;
-}
-
-.icon{
-    color: #21DFCD;
-    float: right;
-    width: 40px;
-    font-size: 1.3rem;
-    height: 25px;
-    border-radius: 70%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
-} */
-
 #second{
     background-color: #00506b;
 }
-#title{
-    background-color:#00506b;
-    color: #fff;
-    text-align: center;
+.header-color{
+    margin: 6% 0;
+}
+.titlebar{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    color:#ffffff;
+    /* background-color: #dadbc6;
+    max-width:100%; */
 }
 
 .call-to-action{
     text-align: center;
     justify-content: center;
     color:#fff;
-    padding-top: 15%;
+    padding-top: 22%;
 
 }
 
@@ -87,11 +42,6 @@ input{
 
 }
 
-/* .second-text{
-    animation:both;
-    animation-timing-function: ease-in-out;
-} */
-
 #SLIDE_BG {
     width: 100%;
     height: 100vh;
@@ -101,8 +51,7 @@ input{
     backface-visibility: hidden;
     animation: slideBg 30s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    background-image: url(images/background.jpg)
-
+    background-image: url(images/slideshow/background.jpg)
 }@keyframes slideBg {
     0% {
     background-image: url(images/slideshow/1.jpeg);
@@ -217,7 +166,7 @@ input{
 }
 
 .explore-button{
-    background-color: #dc143c;
+    background-color: #1493dc;
     color: #ffffff;
     border-radius: 60px;
     text-align: center;
@@ -262,6 +211,8 @@ form{
     padding: 1em;
     border-radius: 10px;
     border: 1px solid #ccc;
+
+    
 }
 
 #footer{
@@ -273,4 +224,120 @@ form{
     flex-direction: row;
     justify-content: space-evenly;
     
+}
+
+/* NAVBAR */
+nav .navbar-nav .nav-item a{
+    color:#ffffff !important;
+}
+
+.footer-spreadout{
+    background: #00506b;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 40px;
+}
+
+
+.footer-spreadout .footer-left{
+    float: left;
+}
+
+.footer-spreadout h3{
+    color: #fff;
+}
+
+
+.footer-spreadout h3 span{
+    color:#5383d3;
+}
+
+.footer-spreadout .footer-copyright{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.footer-spreadout .footer-icons{
+    margin-top: 10px;
+}
+
+.footer-spreadout .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-spreadout .footer-middle{
+    color: #f8f8f8;
+}
+
+.footer-spreadout .footer-right{
+	float: right;
+}
+
+.footer-spreadout .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+} 
+
+/* contact form section */
+.footer-spreadout form{
+    display: inline-block;
+}
+
+.footer-spreadout form input, .footer-spreadout form textarea{
+    display: block;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff1a;
+    border: none;
+    resize: none;
+    width: 350px;
+    padding: 15px;
+
+}
+
+.footer-spreadout ::-webkit-input-placeholder{
+    color: #5c666b;
+}
+
+.footer-spreadout ::-moz-placeholder{
+    color: #5c666b;
+    opacity: 1;
+}
+
+.footer-spreadout form input{
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-spreadout form textarea{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-spreadout form button{
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 0;
+    padding: 10px 10px;
+    font-weight: bold;
+    float:inherit;
 }
