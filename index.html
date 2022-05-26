@@ -20,420 +20,256 @@
   <!-- Css Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="project.css">
+<!-- owl-carousel script -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
   <!-----------------------------------END---------------------------------->
+
+
 </head>
-  <section id="title">
-    <div id="SLIDE_BG">
       <body>
-        <div class="container titlebar">
-          <nav class="navbar navbar-expand-lg navbar-light ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fas fa-bars" style="color: #fff;"></i>
+<!-------- START OF TITLE SECTION ----------->
+        <section id="first-section">
+          <div id="SLIDE_BG">
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Bookings</a>
+                  <a class="nav-link" href="javascript:void(0)">Bookings</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#testimonial">Reviews</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Destinations</a>
+                  <a class="nav-link" href="javascript:void(0)">Destination</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#footer">Contact</a>
+                  <a class="nav-link" href="#bottom">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">LOG IN</a>
-                </li>
+                <button type="button" class="btn btn-outline-success btn-md login-button" data-toggle="modal" data-target="#loginmodal">
+                  Login
+                </button>
               </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search Destination">
+                <button class="btn btn-primary" type="button">Discover</button>
+              </form>
             </div>
-          </nav>
-         </div>
+          </div>
+        </nav>
 
       <div class="row call-to-action" >
         <div class="col-lg-12 bg-text">
-          <b><em><h1 class="big-heading">Trip Exclusive Travels</h1></em></b>
-        <b><p class="second-text">you dream it, we make it happen</p></b>
-          <button type="button" class="btn fit-button-size-medium explore-button">Explore</button>
+          <strong><b><em><h1 class="big-heading">Trip Exclusive Travels</h1></em></b></strong>
+        <b><p class="second-text">you dream it, we make it happen...</p></b>
+          <button type="button" class="btn btn-block explore-button">Explore</button>
         </div>
    </div>
      </div>
-   
   </section>
+  <!-------- END OF TITLE SECTION ----------->
 
 
-<section id="testimonial">
-  <div class="heading first-heading">
-    What our customers say
-  </div>
-  <div class="container">
-      <!-- Carousel wrapper -->
-<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
-  <!-- Controls -->
-  <div class="d-flex justify-content-center mb-4">
-    <button class="carousel-control-prev position-relative" type="button"
-      data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next position-relative" type="button"
-      data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <div class="container">
+<!-------- START OF RATING SECTION ------>
+  <section id="second-section">
+    <div class="container">
+      <div id="ratings" class="rating-section">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h4 class="m-0">1500 ratings</h4>
+            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 188px;">
+                <span class="selection">
+                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-qd66-container">
+                        <span class="select2-selection__rendered" id="select2-qd66-container" role="textbox" aria-readonly="true" title="Most Relevant"></span>
+                        <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                    </span>
+                </span>
+                <span class="dropdown-wrapper" aria-hidden="true"></span>
+            </span>
+        </div>
         <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Anna Deynah</h5>
-            <p>UX Designer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-            </ul>
-          </div>
+            <div class="col-md-6">
+                <table class="stars-counters">
+                    <tbody>
+                        <tr class="">
+                            <td>
+                                <span>
+                                    <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
+                                </span>
+                            </td>
+                            <td class="progress-bar-container">
+                                <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+                                    <div class="fit-progressbar-background">
+                                        <span class="progress-fill" style="width: 99.2973%;"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="star-num">(1350)</td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <span>
+                                    <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
+                                </span>
+                            </td>
+                            <td class="progress-bar-container">
+                                <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+                                    <div class="fit-progressbar-background">
+                                        <span class="progress-fill" style="width: 80.6487%;"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="star-num">(150)</td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <span>
+                                    <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
+                                </span>
+                            </td>
+                            <td class="progress-bar-container">
+                                <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+                                    <div class="fit-progressbar-background">
+                                        <span class="progress-fill"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="star-num">(0)</td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <span>
+                                    <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
+                                </span>
+                            </td>
+                            <td class="progress-bar-container">
+                                <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+                                    <div class="fit-progressbar-background">
+                                        <span class="progress-fill" style="width: 0;"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="star-num">(0)</td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <span>
+                                    <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i></button>
+                                </span>
+                            </td>
+                            <td class="progress-bar-container">
+                                <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+                                    <div class="fit-progressbar-background">
+                                        <span class="progress-fill" style="width: 0;"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="star-num">(0)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <div class="ranking">
+                    <h6 class="text-display-7">Rating Breakdown</h6>
+                    <ul>
+                        <li>
+                            Customer Service<span>5<span class="rating-star rate-10 show-one"></span></span>
+                        </li>
+                        <li>
+                            Recommend to a friend<span>4.9<span class="rating-star rate-10 show-one"></span></span>
+                        </li>
+                        <li>
+                            Service as described<span>5<span class="rating-star rate-10 show-one"></span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-------- END OF RATING SECTION ----->
 
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">John Doe</h5>
-            <p>Web Developer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-              suscipit laboriosam, nisi ut aliquid commodi.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li>
-                <i class="fas fa-star-half-alt fa-sm"></i>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Maria Kate</h5>
-            <p>Photographer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque corrupti.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="far fa-star fa-sm"></i></li>
-            </ul>
+<!-------- START OF REVIEW SECTION ----------->
+<section id="third-section">
+  <div class="third-section-text">
+    <strong><h5>What our customers say</h5></strong>
+  </div>
+  <div class="gtco-testimonials">
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div>
+        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
+          <div class="card-body">
+            <h5>Ronne Galle <br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">John Doe</h5>
-            <p>UX Designer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Alex Rey</h5>
-            <p>Web Developer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-              suscipit laboriosam, nisi ut aliquid commodi.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li>
-                <i class="fas fa-star-half-alt fa-sm"></i>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Maria Kate</h5>
-            <p>Photographer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque corrupti.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="far fa-star fa-sm"></i></li>
-            </ul>
+      <div>
+        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+          <div class="card-body">
+            <h5>Missy Limana<br />
+              <span> Engineer </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Anna Deynah</h5>
-            <p>UX Designer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-            </ul>
+      <div>
+        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
+          <div class="card-body">
+            <h5>Martha Brown<br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
           </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">John Doe</h5>
-            <p>Web Developer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-              suscipit laboriosam, nisi ut aliquid commodi.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li>
-                <i class="fas fa-star-half-alt fa-sm"></i>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Maria Kate</h5>
-            <p>Photographer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque corrupti.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="far fa-star fa-sm"></i></li>
-            </ul>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
+          <div class="card-body">
+            <h5>Hanna Lisem<br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Inner -->
-  </div>
-</div>
-<!-- Carousel wrapper -->
 </section>
+<!-------- END OF REVIEW SECTION ----------->
 
-<section id="second">
-  <div class="container">
-    <div id="ratings" class="rating-section">
-      <div class="d-flex align-items-center justify-content-between mb-4">
-          <h4 class="m-0">1500 ratings</h4>
-          <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 188px;">
-              <span class="selection">
-                  <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-qd66-container">
-                      <span class="select2-selection__rendered" id="select2-qd66-container" role="textbox" aria-readonly="true" title="Most Relevant"></span>
-                      <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
-                  </span>
-              </span>
-              <span class="dropdown-wrapper" aria-hidden="true"></span>
-          </span>
-      </div>
-      <div class="row">
-          <div class="col-md-6">
-              <table class="stars-counters">
-                  <tbody>
-                      <tr class="">
-                          <td>
-                              <span>
-                                  <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
-                              </span>
-                          </td>
-                          <td class="progress-bar-container">
-                              <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
-                                  <div class="fit-progressbar-background">
-                                      <span class="progress-fill" style="width: 99.2973%;"></span>
-                                  </div>
-                              </div>
-                          </td>
-                          <td class="star-num">(1350)</td>
-                      </tr>
-                      <tr class="">
-                          <td>
-                              <span>
-                                  <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
-                              </span>
-                          </td>
-                          <td class="progress-bar-container">
-                              <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
-                                  <div class="fit-progressbar-background">
-                                      <span class="progress-fill" style="width: 80.6487%;"></span>
-                                  </div>
-                              </div>
-                          </td>
-                          <td class="star-num">(150)</td>
-                      </tr>
-                      <tr class="">
-                          <td>
-                              <span>
-                                  <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
-                              </span>
-                          </td>
-                          <td class="progress-bar-container">
-                              <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
-                                  <div class="fit-progressbar-background">
-                                      <span class="progress-fill"></span>
-                                  </div>
-                              </div>
-                          </td>
-                          <td class="star-num">(0)</td>
-                      </tr>
-                      <tr class="">
-                          <td>
-                              <span>
-                                  <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></button>
-                              </span>
-                          </td>
-                          <td class="progress-bar-container">
-                              <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
-                                  <div class="fit-progressbar-background">
-                                      <span class="progress-fill" style="width: 0;"></span>
-                                  </div>
-                              </div>
-                          </td>
-                          <td class="star-num">(0)</td>
-                      </tr>
-                      <tr class="">
-                          <td>
-                              <span>
-                                  <button class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter"><i class="fa-solid fa-star"></i></button>
-                              </span>
-                          </td>
-                          <td class="progress-bar-container">
-                              <div class="fit-progressbar fit-progressbar-bar star-progress-bar">
-                                  <div class="fit-progressbar-background">
-                                      <span class="progress-fill" style="width: 0;"></span>
-                                  </div>
-                              </div>
-                          </td>
-                          <td class="star-num">(0)</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-          <div class="col-md-6">
-              <div class="ranking">
-                  <h6 class="text-display-7">Rating Breakdown</h6>
-                  <ul>
-                      <li>
-                          Customer Service<span>5<span class="rating-star rate-10 show-one"></span></span>
-                      </li>
-                      <li>
-                          Recommend to a friend<span>4.9<span class="rating-star rate-10 show-one"></span></span>
-                      </li>
-                      <li>
-                          Service as described<span>5<span class="rating-star rate-10 show-one"></span></span>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>
-  </section>
-  <!-- END OF RATING SECTION -->
-  
-
-<section class="cta-second">
+<!-------- START OF FOURTH SECTION ----------->
+<section id="fourth-section">
   <div class="motivational-text">
-    <h3>The journey of a thousand miles begins with a single step</h3>
-    <h6>Have stories to tell not stuff to show</h6>
+    <h2>The journey of a thousand miles begins with a single step</h2>
+    <h6>create your story</h6>
     <button type="button" class="btn btn-dark btn-lg booking-button">Book Now!</button>
   </div>
 </section>
+<!-------- END OF FOURTH SECTION ----------->
 
-<section id="bottom">
-
+<!------- Bottom Footer Section Start------->
+<section id="bottom-footer">
   <footer class="footer-spreadout">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-lg-4">
-          <h3>Company <span>Name</span></h3>
-          <p class="footer-copyright">Travel and trips ©2022</p>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3><span>Travels</span> and <span>trips</span></h3>
+          <p class="footer-copyright">©2022</p>
           <h3>Follow Us</h3>
         <div class="footer-icons">
           <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
@@ -443,14 +279,14 @@
           <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
         </div>
         </div>
-        <div class="col-md-12 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="footer-middle">
             <h3>Booking Office</h3>
             <p>ul. Projektowa 4, Lublin</p>
             <p>Tel:+48555555555</p>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="footer-right">
             <h3>Contact Us</h3>
             <form action="" method="post" class="info-form">
@@ -462,10 +298,9 @@
         </div>
       </div>
     </div>
-    
-    
   </footer>
 </section>
+<!------- Bottom Footer Section END------->
 <script type="text/javascript" src="js\init.js"></script>
 </body>
 </html>
