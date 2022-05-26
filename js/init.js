@@ -1,26 +1,36 @@
-$(document).ready(function($) {
+/* Owl carousel start*/
 
-    $(window).on('scroll', function() {
-  
-      //ADD .TIGHT
-      if ($(window).scrollTop() + $(window).height() > $('.wrapper').outerHeight()) {
-        $('body').addClass('tight');
-        $('.arrow').hide();
-      } else {
-        $('body').removeClass('tight');
-        $('.arrow').show();
+(function () {
+  "use strict";
+
+  var carousels = function () {
+    $(".owl-carousel1").owlCarousel({
+      loop: true,
+      center: true,
+      margin: 0,
+      responsiveClass: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        680: {
+          items: 2,
+          nav: false,
+          loop: false
+        },
+        1000: {
+          items: 3,
+          nav: true
+        }
       }
     });
-  
-    //BACK TO PRESENTATION MODE
-    $("html").on("click", "body.tight .wrapper", function() {
-      $('html, body').animate({
-        scrollTop: $('.wrapper').outerHeight() - $(window).height()
-      }, 500);
-    });
-  
-  });
-  
-  $('.arrow').click(function(){
-     $("html").animate({ scrollTop: $('html').prop("scrollHeight")}, 1200);
-  });
+  };
+
+  (function ($) {
+    carousels();
+  })(jQuery);
+})();
+
+/* Owl carousel end*/
