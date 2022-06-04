@@ -1,21 +1,147 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+body{
+  overflow-x: hidden;
+
+}
+
+
+.bubble{
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(to right top, #f46b45, #eea849);
+  transform: scale(2);
+}
+
+nav{
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to top left, #659dbd, #5aaaae, #7cb192, #adb27f, #daad86);
+  height: 8vh;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+.nav-links li{
+  list-style: none;
+  display: inline-block;
+}
+.nav-links a{
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 12px;
+  
+}
+
+nav ul{
+  overflow: hidden;
+  transition: 1s;
+}
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width:500px) {
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #659dbd, #5aaaae, #7cb192, #adb27f, #daad86);
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* SECTION ID MODS IN ORDER OF OCCURRENCE */
 /* First section */
-#first-section{
+#home{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
     align-items:center;
     color:#ffffff;
 }
-#SLIDE_BG {
+.SLIDE_BG {
     width: 100%;
     height: 100vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
+    background-attachment: fixed;
     animation: slideBg 30s linear infinite 0s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: all 0.8s ease-in-out;
     background-image: url(images/slideshow/background.jpg)
 }@keyframes slideBg {
     0% {
@@ -40,17 +166,23 @@
 }
 .call-to-action{
     text-align: center;
-    justify-content: center;
+    justify-content:center;
     color:#fff;
-    padding-top: 15%;
+    display: flex;
+    padding: 20%;
+    align-items: center;
+}
 
+.second-text{
+  text-align: center;
 }
 
 .big-heading{
-    font-size: 50px;
+    font-size: 60px;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: center;
     text-align: center;
-
-
+    align-items: center;
 }
 
 .explore-button{
@@ -59,10 +191,12 @@
     text-align: center;
     justify-content: center;
     cursor: pointer;
+    align-items: center;
 }
 .explore-button:hover{
     background-color:#FFD700;
     color: #000000;
+    justify-content: center;
 }
 
 
@@ -75,8 +209,51 @@
     background-image: linear-gradient(to right bottom, #7cb192, #adb27f, #daad86,#659dbd, #5aaaae);
     background-repeat: no-repeat;
 }
+ /* suggestion card carousel */
+
+ .card{
+  width: 20rem;
+}
+.card-img-top {
+  display: flex;
+  height: 30vw;
+  object-fit:cover;
+}
+
+.suggest-cards{
+  margin: 0 15% 15%;
+}
+.tour-suggest{
+  padding: 5% 0 0 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-img-overlay{
+  /* position: absolute; */
+  top: 80%;
+  text-align: center;
+  padding-bottom: 5%;
+  color:#fff;
+}
+
+.card-text{
+  line-height: 1.5%;
+}
+.controls-top{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.carousel-item-active{
+  transition: all 0.2s ease-in-out;
+}
 
 /* CLASSES IN SECOND SECTION */
+
+
+
 /* RATING SECTION */
 
 .rating-section .stars-counters tr .stars-filter.fit-button {
@@ -313,17 +490,6 @@
 }
 /* Fourth Section End */
 
-/* LOGIN MODAL */
-.login-button{
-    border-color:transparent;
-    color: #ffffff;
-}
-
-body{
-    background-color: #ffffff;
-}
-
-
 /* PHOTO card2 */
 .wrapper {
   margin: 10vh;
@@ -405,31 +571,81 @@ body{
   background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, #455f71 100%);
 }
 
-.card{
-  width: 20rem;
+
+
+.gradient-line{
+  width: 13vw;
+  border: 10px solid #daad86;
+  border-style:10px solid #daad86;
+  text-decoration:none;
+  margin: 0;
+  padding: 0;
 }
-.card-img-top {
-  height: 25vw;
-  object-fit:cover;
+.offer-section{
+  margin: 0 5% 10%;
+}
+.offer-section-left{
+  padding-left: 2%;
 }
 
-.suggest-cards{
-  margin: 0 15% 10%;
+
+
+/* multicolored cards */
+.image-round{
+  max-width: 100%;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
 }
-.tour-suggest{
-  padding: 5%;
-  text-align: center;
+
+.multi-cards-section{
   justify-content: center;
-}
-
-.card-img-overlay{
-  position: absolute;
-  top: 80%;
   text-align: center;
-  padding-bottom: 5%;
-  color:#fff;
 }
 
-.card-text{
-  line-height: 1.5%;
+.multi-cards-section h6{
+  padding-top: 5%;
+  font-size: small;
+  text-align: center;
 }
+.bottom-multi-card{
+  margin-bottom: 10%;
+}
+
+/* NEWSLETTER SECTION */
+.newsletter {
+  padding: 3%;
+}
+
+.section-content{
+  background: #19beda;
+  padding: 3%;
+  margin-bottom: 5%;
+
+}
+  
+  .newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+  .newsletter .content h2 {
+  color: #ffffff;
+  margin-bottom: 40px; }
+  .newsletter .content .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius:0;
+  }
+  .newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #243c4f;
+  }
+  .newsletter .content .btn {
+  min-height: 50px; 
+  border-radius:0;
+  background: #243c4f;
+  color: #fff;
+  font-weight:600;
+  }
