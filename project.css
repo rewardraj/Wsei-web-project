@@ -175,14 +175,18 @@ nav ul{
 
 .second-text{
   text-align: center;
+  font-family: 'Bodoni MT', serif;
+  line-height: 5%;
+  padding-bottom: 2%;
 }
 
 .big-heading{
-    font-size: 60px;
-    font-family: 'Merriweather Sans', sans-serif;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+  font-size: 80px;
+  font-family: 'Brush Script MT', cursive;
+  font-weight: 900;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .explore-button{
