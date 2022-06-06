@@ -9,7 +9,9 @@ body{
   overflow-x: hidden;
 
 }
-
+.logo img{
+  height: 50px;
+}
 
 .bubble{
   position: absolute;
@@ -20,7 +22,7 @@ body{
 
 nav{
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top left, #659dbd, #5aaaae, #7cb192, #adb27f, #daad86);
+  background:#1c2331;
   height: 8vh;
 }
 
@@ -580,7 +582,7 @@ nav ul{
 .gradient-line{
   width: 13vw;
   border: 10px solid #daad86;
-  border-style:10px solid #daad86;
+  background-color: #daad86;
   text-decoration:none;
   margin: 0;
   padding: 0;
