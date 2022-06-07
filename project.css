@@ -7,7 +7,8 @@
 
 body{
   overflow-x: hidden;
-
+  justify-content: center;
+  filter: contrast(1.0);
 }
 .logo img{
   height: 50px;
@@ -16,13 +17,13 @@ body{
 .bubble{
   position: absolute;
   z-index: -2;
-  background: linear-gradient(to right top, #f46b45, #eea849);
+  background: #1c2331; /* midnight express */
   transform: scale(2);
 }
 
 nav{
   font-family: 'Poppins', sans-serif;
-  background:#1c2331;
+  background:#1c2331; /* midnight express */
   height: 8vh;
 }
 
@@ -80,7 +81,7 @@ nav ul{
     top: 5vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, #659dbd, #5aaaae, #7cb192, #adb27f, #daad86);
+    background: #1c2331;
     align-items: center;
     width: 50%;
     transform: translateX(100%);
@@ -178,33 +179,58 @@ nav ul{
 .second-text{
   text-align: center;
   font-family: 'Bodoni MT', serif;
-  line-height: 5%;
+  padding-top: 1%;
   padding-bottom: 2%;
+  width: 100%;
 }
 
 .big-heading{
-  font-size: 80px;
-  font-family: 'Brush Script MT', cursive;
-  font-weight: 900;
+  font-size: 60px;
+  font-family: 'Garamond', serif;
+  font-weight: 800;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
-.explore-button{
-    background-color: #1493dc;
-    color: #ffffff;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
-    align-items: center;
-}
-.explore-button:hover{
-    background-color:#FFD700;
-    color: #000000;
-    justify-content: center;
+.bn632-hover {
+  width: 116px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 6px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn26 {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  );
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
 
 /* Second section */
 
@@ -220,14 +246,26 @@ nav ul{
  .card{
   width: 20rem;
 }
+
 .card-img-top {
   display: flex;
-  height: 30vw;
+  display: block;
+  height: 35vw;
   object-fit:cover;
+  justify-content: center;
+  align-items: center;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .col .card-img-top{
+    display: block !important;
+    flex: none !important;
+    flex-direction: column;
+    height: 100%;
+  }
+  }
 
 .suggest-cards{
-  margin: 0 15% 15%;
+  margin: 0 11% 12%;
 }
 .tour-suggest{
   padding: 5% 0 0 0;
@@ -588,7 +626,7 @@ nav ul{
   padding: 0;
 }
 .offer-section{
-  margin: 0 5% 10%;
+  margin: 3% 5% 10%;
 }
 .offer-section-left{
   padding-left: 2%;
