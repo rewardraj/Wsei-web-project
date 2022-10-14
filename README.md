@@ -1,2 +1,2 @@
-# Wsei-web-project
+#Web Project
 Group school project
